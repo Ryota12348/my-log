@@ -219,6 +219,12 @@ git clone https://github.com/username/repository.git
 ここに詳細を書く。
 </details>
 ```
+```html
+<details>
+<summary>INDEX</summary>
+
+</details>
+```
 
 **表示例：**
 <details>

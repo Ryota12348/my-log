@@ -4,6 +4,21 @@
 
 これは、アイデアを保存し、進捗状況を追跡し、時間の経過とともに成長を振り返るためのスペースです。
 
+<details>
+<summary>INDEX</summary>
+
+- [my-log](#my-log)
+  - [📅 journal](#-journal)
+  - [📚 study](#-study)
+  - [🧠 ideas](#-ideas)
+  - [🛠 projects](#-projects)
+  - [financial](#financial)
+  - [game](#game)
+  - [ファイル構造](#ファイル構造)
+  - [🧭 原則](#-原則)
+
+</details>
+
 ---
 
 ## 📅 journal
@@ -18,6 +33,12 @@
 ## 🛠 projects
 小さな実験と個人的な創作。
 
+## financial
+日々のおカネ事情の記録。
+
+## game
+ゲームのログと攻略ガイド。
+
 ---
 
 > [!NOTE]
@@ -26,6 +47,9 @@
 
 ---
 ## ファイル構造
+
+<details>
+<summary>study</summary>
 
 ```
 study
@@ -75,6 +99,24 @@ study
 └─ info
    └─ textbook-data.md
 ```
+
+</details>
+
+<details>
+<summary>全体の構造</summary>
+
+```
+├─guide
+│  └─setup
+├─ideas
+├─journal
+├─log
+├─mindmap
+├─projects
+└─study
+```
+</details>
+
 ---
 
 ## 🧭 原則
