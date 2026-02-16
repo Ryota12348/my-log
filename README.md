@@ -106,12 +106,15 @@ study
 <summary>全体の構造</summary>
 
 ```
+C:.
+├─financial
+├─game
 ├─guide
 │  └─setup
 ├─ideas
+│  └─mindmap
 ├─journal
 ├─log
-├─mindmap
 ├─projects
 └─study
 ```
