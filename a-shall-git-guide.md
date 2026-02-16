@@ -116,18 +116,17 @@ git pull
 ------------------------------------------------------------------------
 
 ## 10. Useful Commands Summary
+  
+| Command      | Purpose             |
+| ------------ | ------------------- |
+| `git clone`  | Download repository |
+| `git status` | Check changes       |
+| `git add`    | Stage changes       |
+| `git commit` | Record changes      |
+| `git push`   | Upload changes      |
+| `git pull`   | Download updates    |
 
-
-  Command      Purpose
-  ------------ ---------------------
-  git clone    Download repository
-  git status   Check changes
-  git add      Stage changes
-  git commit   Record changes
-  git push     Upload changes
-  git pull     Download updates
-
-------------------------------------------------------------------------
+---
 
 ## Recommended Daily Workflow
 
