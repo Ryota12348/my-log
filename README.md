@@ -16,6 +16,13 @@
   - [game](#game)
   - [ファイル構造](#ファイル構造)
   - [🧭 原則](#-原則)
+  - [Template](#template)
+    - [Notebook](#notebook)
+    - [📘 オール教科対応テンプレ（基本形）](#-オール教科対応テンプレ基本形)
+    - [📗 暗記科目用（歴史・生物など）](#-暗記科目用歴史生物など)
+    - [📙 数学・理科（問題演習型）](#-数学理科問題演習型)
+    - [📕 超シンプル1ページ型（テスト前用）](#-超シンプル1ページ型テスト前用)
+    - [wallet](#wallet)
 
 </details>
 
@@ -107,12 +114,12 @@ study
 
 ```
 C:.
+├─classes-log
+├─exam
 ├─financial
 ├─game
 ├─guide
-│  └─setup
 ├─ideas
-│  └─mindmap
 ├─journal
 ├─log
 ├─projects
@@ -133,6 +140,8 @@ C:.
 ## Template
 
 ### Notebook
+<details>
+<summary>テンプレートを見る</summary>
 
 ``` Markdown
 # タイトル
@@ -344,6 +353,7 @@ C:.
 |          |       |
 | sum      | ****  |
 ```
+</details>
 
 ---
 _このリポジトリは私とともに成長します。_

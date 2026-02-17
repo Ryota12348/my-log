@@ -102,7 +102,7 @@ study/
 ---
 
 
-これで `setup_study.ps1` の基本操作はOKです。
+これで `directory_setup.ps1` の基本操作はOKです。
 
 ### コード例
 <details>
