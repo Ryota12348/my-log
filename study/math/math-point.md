@@ -12,15 +12,16 @@
 -   対偶（$q⇒p$）は元の命題と同値
 -   必要十分条件は「$⇔$」で表す
 
-🔗 まとめリンク\
-- https://rikeilabo.com/mathmatics-formula\
+🔗 まとめリンク
+- https://rikeilabo.com/mathmatics-formula
 - https://manabitimes.jp/math/1019
 
 ------------------------------------------------------------------------
 
 ### 2. 正弦定理・余弦定理
 
-正弦定理\
+正弦定理
+
 $$
 \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R
 $$
@@ -34,7 +35,7 @@ $$
 -   cosの符号ミスに注意
 
 🔗 まとめリンク
-- https://study.admy.jp/undergrad.exam/fundamental/math/module-9-sine-cosine-rules/\
+- https://study.admy.jp/undergrad.exam/fundamental/math/module-9-sine-cosine-rules/
 - https://manabitimes.jp/math/1198
 
 ------------------------------------------------------------------------
@@ -47,7 +48,7 @@ $$
 -   内接四角形：対角の和$=180°$
 -   チェバ・メネラウスの定理：比の積$=1$
 
-🔗 まとめリンク\
+🔗 まとめリンク
 - https://izumi-math.jp/S_Yoshida/matome/frame.html\
 - https://manabitimes.jp/math/1233
 
@@ -73,7 +74,7 @@ $$
 -   「少なくとも」は余事象を使う
 
 🔗 まとめリンク\
-- https://www.try-it.jp/k/mathematics/\
+- https://www.try-it.jp/k/mathematics/
 - https://manabitimes.jp/math/1150
 
 ------------------------------------------------------------------------
@@ -102,7 +103,7 @@ R = \sqrt{a^2 + b^2}
 $$
 
 🔗 まとめリンク\
-- https://rikeilabo.com/mathmatics-formula\
+- https://rikeilabo.com/mathmatics-formula
 - https://manabitimes.jp/math/1212
 
 ------------------------------------------------------------------------
@@ -132,7 +133,7 @@ $$
 $$
 
 🔗 まとめリンク\
-- https://hatsudy.com/jp/h-math\
+- https://hatsudy.com/jp/h-math
 - https://manabitimes.jp/math/755
 
 ------------------------------------------------------------------------
