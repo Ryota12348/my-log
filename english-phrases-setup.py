@@ -1,47 +1,51 @@
-from datetime import date
+from datetime import datetime
 
-filename = "英語の重要表現まとめ.md"
+# 現在日時
+now = datetime.now()
+timestamp = now.strftime("%Y-%m-%d-%H-%M")
 
-def initialize_file():
-    try:
-        with open(filename, "x", encoding="utf-8") as f:
-            f.write(f"# 英語の重要表現まとめ\n\n作成日: {date.today()}\n\n---\n\n")
-    except FileExistsError:
-        pass  # すでに存在する場合は何もしない
+# ===== 初期入力 =====
+base_filename = input("ファイル名（必須）: ").strip()
+title = input("タイトル（H1）: ").strip()
 
-def add_expression():
-    expression = input("表現: ")
-    meaning = input("意味: ")
-    example = input("例文: ")
+if base_filename == "":
+    base_filename = "English-phrases"
 
-    entry = f"""## {expression}
+# 日時を付与
+filename = f"{base_filename}-{timestamp}.md"
+
+if title == "":
+    title = base_filename
+
+# ===== ファイル作成 =====
+with open(filename, "w", encoding="utf-8") as f:
+    f.write(
+        f"# {title}\n\n"
+        f"作成日時: {now.strftime('%Y-%m-%d %H:%M')}\n\n"
+        f"---\n\n"
+    )
+
+print(f"\n{filename} を作成しました。")
+print("英語重要表現 CLI（終了: Ctrl+C）\n")
+
+# ===== 入力ループ =====
+try:
+    while True:
+        expression = input("表現: ")
+        meaning = input("意味: ")
+
+        entry = f"""## {expression}
 
 - 意味: {meaning}
-- 例文: {example}
 
 ---
+
 """
 
-    confirm = input("追加しますか？(y/n): ")
-
-    if confirm.lower() == "y":
         with open(filename, "a", encoding="utf-8") as f:
             f.write(entry)
-        print("追加しました！\n")
-    else:
-        print("キャンセルしました。\n")
 
-def main():
-    initialize_file()
-    print("英語重要表現 CLI モード\n")
+        print("追加しました。\n")
 
-    while True:
-        add_expression()
-        cont = input("続けますか？(y/n): ")
-        if cont.lower() != "y":
-            break
-
-    print("終了しました。")
-
-if __name__ == "__main__":
-    main()
+except KeyboardInterrupt:
+    print("\n終了しました。")
