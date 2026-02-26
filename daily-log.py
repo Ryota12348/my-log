@@ -10,7 +10,7 @@ def multi_line_input(label):
     return lines
 
 now = datetime.now()
-filename = now.strftime("Daily-%Y-%m-%d-%H-%M.md")
+filename = now.strftime("daily-%Y-%m-%d-%H-%M.md")
 
 date_str = now.strftime("%Y-%m-%d")
 weekday_map = {
@@ -65,29 +65,34 @@ while True:
     # ===== Classes =====
     elif choice == "2":
         classes = []
+
         for i in range(1, 8):
-            print(f"\n{i}h（空Enterで終了）")
-            subject = input("授業: ")
+            print(f"\n{i}h")
+            subject = input("教科（空Enterでスキップ）: ")
+
             if subject == "":
-                break
+                classes.append(None)
+                continue
 
-        print("内容（空Enterで終了）")
-        contents = []
-        while True:
-            cont = input("- ")
-            if cont == "":
-                break
-            contents.append(cont)
+        # 内容（複数）
+            print("内容（空Enterで終了）")
+            contents = []
+            while True:
+                cont = input("- ")
+                if cont == "":
+                    break
+                contents.append(cont)
 
-        print("連絡（空Enterでスキップ）")
-        notes = []
-        while True:
-            note = input("> ")
-            if note == "":
-                break
-            notes.append(note)
+        # 連絡（複数）
+            print("連絡（空Enterで終了）")
+            notes = []
+            while True:
+                note = input("> ")
+                if note == "":
+                    break
+                notes.append(note)
 
-        classes.append((subject, contents, notes))
+            classes.append((subject, contents, notes))
 
         data["classes"] = classes
         answered["classes"] = True
@@ -163,9 +168,17 @@ else:
 
 # Classes
 # Classes
+# Classes
 content += "\n\n---\n\n## 🏫 Classes-log\n"
 
-for subject, contents, notes in data["classes"]:
+for idx, cls in enumerate(data["classes"], start=1):
+    content += f"\n### {idx}h\n"
+
+    if cls is None:
+        continue
+
+    subject, contents, notes = cls
+
     content += f"\n### {subject}\n"
 
     for cont in contents:
@@ -175,7 +188,6 @@ for subject, contents, notes in data["classes"]:
         content += "\n>[!NOTE] 連絡\n"
         for note in notes:
             content += f"> {note}\n"
-
 # Study
 content += "\n\n---\n\n## 📚 Study-log\n"
 for subject, time, cont, imp in data["study"]:
